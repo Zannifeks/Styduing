@@ -2,7 +2,7 @@ package homework;
 
 import java.util.Scanner;
 
-/*
+/**
  * AIT-TR, Java Basic, Cohort42.1, HW #3
  * @Author Rodion Shilinski
  * @Version 25.01.2024
