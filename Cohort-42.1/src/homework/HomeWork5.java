@@ -50,7 +50,7 @@ public class HomeWork5 {
         if (four.length() !=4) {
             System.out.println("Error: try again with fout digit number.");
             System.exit(1);
-            }
+        }
             int char1 = four.charAt(0) - '0';
             int char2 = four.charAt(1) - '0';
             int char3 = four.charAt(2) - '0';
