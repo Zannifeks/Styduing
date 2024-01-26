@@ -3,6 +3,12 @@ package homework;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * AIT-TR, Java Basic, Cohort42.1, HW #5
+ * @Author Shilinski Rodion
+ * @Version 26.01,2024
+ */
+
 public class HomeWork5 {
     public static void main(String[] args) {
 
