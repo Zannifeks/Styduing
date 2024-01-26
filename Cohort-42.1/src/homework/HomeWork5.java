@@ -33,7 +33,7 @@ public class HomeWork5 {
 //        System.out.println("You entered: " + result);
 
 //        Это масив с ним разберусь позже
-        
+
         int number;
         Scanner input = new Scanner(System.in);
         System.out.print("Enter number 1 or 2 or 3: ");
