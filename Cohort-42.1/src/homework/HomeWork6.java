@@ -6,8 +6,6 @@ package homework;
  * @Version 26.01,2024
  */
 
-/
-
 import java.util.Scanner;
 
 public class HomeWork6 {
