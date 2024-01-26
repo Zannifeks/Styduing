@@ -1,6 +1,12 @@
 package homework;
 
-import org.w3c.dom.ls.LSOutput;
+/**
+ * AIT-TR, Java Basic, Cohort42.1, HW #5
+ * @Author Shilinski Rodion
+ * @Version 26.01,2024
+ */
+
+/
 
 import java.util.Scanner;
 
