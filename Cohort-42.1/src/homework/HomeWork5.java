@@ -80,15 +80,15 @@ public class HomeWork5 {
             System.out.println("Error: try again with fort digit number.");
             System.exit(1);
         }
-            int char1 = four.charAt(0) - '0';
-            int char2 = four.charAt(1) - '0';
-            int char3 = four.charAt(2) - '0';
-            int char4 = four.charAt(3) - '0';
-            boolean lucky = (char1 + char2) == (char3 + char4);
-            if (lucky) {
-                System.out.println("It's your day and the lucky number.");
-            } else {
-                System.out.println("Sorry, it's not lucky try again");
-            }
+        int char1 = four.charAt(0) - '0';
+        int char2 = four.charAt(1) - '0';
+        int char3 = four.charAt(2) - '0';
+        int char4 = four.charAt(3) - '0';
+        boolean lucky = (char1 + char2) == (char3 + char4);
+        if (lucky) {
+            System.out.println("It's your day and the lucky number.");
+        } else {
+            System.out.println("Sorry, it's not lucky try again");
+        }
     }
 }
