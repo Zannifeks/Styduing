@@ -18,7 +18,6 @@ public class HomeWork5 {
         System.out.println("First number: ");
         int number1 = scanner.nextInt();
         System.out.println("Second number: ");
-        int number2 = scanner.nextInt();
         boolean x1 = number1 % 2 == 0;
         boolean y1 = number1 % 3 == 0;
         boolean z1 = x1 && y1;
@@ -88,7 +87,7 @@ public class HomeWork5 {
         if (lucky) {
             System.out.println("It's your day and the lucky number.");
         } else {
-            System.out.println("Sorry, it's not lucky try again");
+            System.out.println("Sorry, it's not lucky try again later");
         }
     }
 }

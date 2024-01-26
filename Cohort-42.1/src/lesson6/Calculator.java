@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
+        //switch
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter expression, like 4 :/*/-/+ 3:");
         int a = scanner.nextInt();
@@ -25,7 +26,28 @@ public class Calculator {
             default:
                 System.out.println("Incorrect input");
         }
-//        if (s.equals("+")){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//                if (s.equals("+")){
 //            System.out.println(a + " + " + b + " = " + (a + b));
 //        } else if (s.equals("-")) {
 //            System.out.println(a + " - " + b + " = " + (a - b));
