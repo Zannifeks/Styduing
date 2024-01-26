@@ -26,11 +26,28 @@ public class HomeWork5 {
 
         //task 2
 
-        System.out.println("Enter number from 1 to 3: ");
-        int number = scanner.nextInt();
-        String[] wrong = {"invalid number", "one", "two", "three"};
-        String result = (number >= 1 && number <= 3) ? wrong[number] : wrong[0];
-        System.out.println("You entered: " + result);
+//        System.out.println("Enter number from 1 to 3: ");
+//        int number = scanner.nextInt();
+//        String[] wrong = {"invalid number", "one", "two", "three"};
+//        String result = (number >= 1 && number <= 3) ? wrong[number] : wrong[0];
+//        System.out.println("You entered: " + result);
+
+//        Это масив с ним разберусь позже
+        
+        int number;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter number 1 or 2 or 3: ");
+        number = input.nextInt();
+
+        if (number == 1) {
+            System.out.println("You entered number ONE.");
+        } else if (number == 2) {
+            System.out.println("You entered number TWO.");
+        } else if (number == 3) {
+            System.out.println("You entered number THREE.");
+        } else {
+            System.out.println("Incorrectly entered number!");
+        }
 
         //task 3
 
