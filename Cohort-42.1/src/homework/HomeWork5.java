@@ -39,13 +39,24 @@ public class HomeWork5 {
         //task 3
 
         Random random = new Random();
+
         int a = random.nextInt(101);
         int b = random.nextInt(101);
         int c = random.nextInt(101);
         int d = random.nextInt(101);
+
         System.out.println("Random numbers: " + a + "," + b + "," + c + "," + d + ";");
         int max = Math.max(Math.max(a, b), Math.max(c, d));
         System.out.println("The maximum is: " + max);
+
+        int n1 = random.nextInt(101);
+        int n2 = random.nextInt(101);
+        int n3 = random.nextInt(101);
+        int n4 = random.nextInt(101);
+        int n12 = n1 < n2? n2 : n1;
+        int n34 = n3 < n4? n4 : n3;
+        int max1 = n12 < n34? n34 : n12;
+        System.out.println(n1 + ", " + n2 + ", " + n3 + ", " + n4 + ", max: " + max1);
 
         //task 4
 
@@ -53,7 +64,7 @@ public class HomeWork5 {
         System.out.println("Enter four digit number: ");
         String four = scanner1.nextLine();
         if (four.length() !=4) {
-            System.out.println("Error: try again with fout digit number.");
+            System.out.println("Error: try again with fort digit number.");
             System.exit(1);
         }
             int char1 = four.charAt(0) - '0';
