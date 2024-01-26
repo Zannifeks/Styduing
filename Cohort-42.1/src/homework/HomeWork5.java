@@ -21,12 +21,8 @@ public class HomeWork5 {
         int number2 = scanner.nextInt();
         boolean x1 = number1 % 2 == 0;
         boolean y1 = number1 % 3 == 0;
-        boolean x2 = number2 % 2 == 0;
-        boolean y2 = number2 % 3 == 0;
         boolean z1 = x1 && y1;
-        boolean z2 = x2 && y2;
         System.out.println("Number: " + number1 + " even: " + x1 + ", multiple 3: " + y1 + " even and multiple 3: " + z1);
-        System.out.println("Number: " + number2 + " even: " + x2 + ", multiple 3: " + y2 + " even and multiple 3: " + z2);
 
         //task 2
 
