@@ -1,12 +1,12 @@
 package homework;
 
+import java.util.Scanner;
+
 /**
- * AIT-TR, Java Basic, Cohort42.1, HW #5
+ * AIT-TR, Java Basic, Cohort42.1, HW #6
  * @Author Shilinski Rodion
  * @Version 26.01,2024
  */
-
-import java.util.Scanner;
 
 public class HomeWork6 {
     public static void main(String[] args) {
