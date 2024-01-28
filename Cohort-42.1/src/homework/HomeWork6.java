@@ -81,17 +81,17 @@ public class HomeWork6 {
 
         //task 5
 
-        Scanner scanner2  =new Scanner(System.in);
-        System.out.println("Type 'Jabka' to end the task: ");        /// Перевести всё в charAt посмотрим что выйдет
-        String jabka = scanner2.nextLine();
+        String java;
+        int count = 0;
+        String task5 = "Please type 'Java' to end the task. ";
         do {
-            if (jabka.equals("Jabka")) {
-                //System.out.println("False try again: ");
-            } else {
-                System.out.println("False try again: ");
-            }
-        } while (jabka.equals("Jabka")); {
-            System.out.println("Congratulations");
-        }
+            count++;
+            System.out.println(task5);
+            java = scanner.next();
+            task5 = "Sorry its wrong. Try again! ";
+        } while (!java.equals("Java"));
+        String attempt = (count == 1) ? " attempt" : " attempts";
+        System.out.println("Congratulations!!! You solved it!");
+        System.out.println("You used " + count + attempt + " to solved it");
     }
 }
