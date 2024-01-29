@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 /**
  * AIT-TR, Java Basic, Cohort42.1, HW #6
- * @Author Shilinski Rodion
- * @Version 26.01,2024
+ * @author Shilinski Rodion
+ * @version 26.01,2024
  */
 
 public class HomeWork6 {
@@ -14,7 +14,7 @@ public class HomeWork6 {
         //task 1
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter 1, 2 pr 3");
+        System.out.println("Enter 1, 2 or 3");
         int n = scanner.nextInt();
         switch (n) {
             case 1:
@@ -52,8 +52,6 @@ public class HomeWork6 {
                 System.out.println("Friday");
                 break;
             case 6:
-                System.out.println("Weekend");
-                break;
             case 7:
                 System.out.println("Weekend");
                 break;
@@ -89,7 +87,7 @@ public class HomeWork6 {
             System.out.println(task5);
             java = scanner.next();
             task5 = "Sorry its wrong. Try again! ";
-        } while (!java.equals("Java"));
+        } while (!java.equalsIgnoreCase("Java"));
         String attempt = (count == 1) ? " attempt" : " attempts";
         System.out.println("Congratulations!!! You solved it!");
         System.out.println("You used " + count + attempt + " to solved it");
