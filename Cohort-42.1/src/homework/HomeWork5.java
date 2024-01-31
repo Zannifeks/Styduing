@@ -17,7 +17,6 @@ public class HomeWork5 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("First number: ");
         int number1 = scanner.nextInt();
-        System.out.println("Second number: ");
         boolean x1 = number1 % 2 == 0;
         boolean y1 = number1 % 3 == 0;
         boolean z1 = x1 && y1;
