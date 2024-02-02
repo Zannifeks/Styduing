@@ -3,6 +3,12 @@ package homework;
 import java.util.Arrays;
 import java.util.Random;
 
+/**
+ * AIT-TR, Java Basic, Cohort42.1, HW #8
+ * @author Shilinski Rodion
+ * @version 1.02,2024
+ */
+
 public class HomeWork8 {
     public static void main(String[] args) {
 
@@ -23,19 +29,6 @@ public class HomeWork8 {
 
         //task 3
 
-//        String[] animals = {"cat", "dog", "elephant", "panda"};
-//        int maxLenght = 0;
-//        int lenght = Integer.valueOf(animals)
-//        for (int leght = 0; leght < animals.lenght)
-
-
-
-//        String[] animals = new String[4];
-//        animals[0] = "dog";
-//        animals[1] = "cat";
-//        animals[2] = "panda";
-//        animals[3] = "elephant";
-//        for (int lenght = 0;);
         String[] s = {"Dog", "Cat", "Panda", "Elephant"};
         String strmaxLenhgt = "";
         for (String str : s) {
