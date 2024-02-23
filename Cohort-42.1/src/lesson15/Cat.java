@@ -14,6 +14,12 @@ public class Cat {
         this.volume = volume;
     }
 
+//    int energy;
+//
+//    public void walk() {
+//        energy -= 3;
+//    }
+//
     public void eat(int food) {
         this.food = food;
     }
