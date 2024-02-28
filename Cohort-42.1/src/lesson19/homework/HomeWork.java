@@ -1,7 +1,11 @@
 package lesson19.homework;
 
 import lesson19.homework.RubberArray;
-
+/**
+ * AIT-TR, Java Basic, Cohort42.1, HW #19
+ * @author Rodion Shilinski
+ * @version 28.02.2024
+ */
 public class HomeWork {
     public static void main(String[] args) {
         lesson19.homework.RubberArray rb = new RubberArray();
