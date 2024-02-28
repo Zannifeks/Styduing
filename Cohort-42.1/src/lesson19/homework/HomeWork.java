@@ -1,6 +1,5 @@
 package lesson19.homework;
 
-import lesson19.homework.RubberArray;
 /**
  * AIT-TR, Java Basic, Cohort42.1, HW #19
  * @author Rodion Shilinski
