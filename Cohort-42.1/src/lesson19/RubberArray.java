@@ -1,11 +1,8 @@
 package lesson19;
 
 public class RubberArray {
-
-    private final int INIT_LIST_SiZE = 3;
-
+    private final int INIT_LIST_SiZE = 10;
     private final float RESIZE_KOEF = 1.5f;
-
     private int[] data;
     private int lenght;
 
@@ -33,6 +30,7 @@ public class RubberArray {
     }
 
     public void remove(int idx) {
+        //move elements right to left from idx
         for (int i = idx; i < data.length - 1; i++) {
             data[i] = data[i + 1];
         }
@@ -41,13 +39,13 @@ public class RubberArray {
 
     @Override
     public String toString() {
-        String str = "[";
+        StringBuilder str = new StringBuilder("[");
         for (int i = 0; i < lenght; i++) {
-            str += String.valueOf(data[i]);
+            str.append(data[i]);
             if (i < lenght - 1) {
-                str += ", ";
+                str.append(", ");
             }
         }
-        return str + "]";
+        return str.append("]").toString();
     }
 }
