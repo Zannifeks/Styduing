@@ -2,7 +2,7 @@ package lesson19;
 
 import java.util.ArrayList;
 /**
- * AIT-TR, Java Basic, Cohort42.1, HW #19
+ * AIT-TR, Java Basic, Cohort42.1, Lesson #19
  * @author Rodion Shilinski
  * @version 28.02.2024
  */
