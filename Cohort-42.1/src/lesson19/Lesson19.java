@@ -1,7 +1,11 @@
 package lesson19;
 
 import java.util.ArrayList;
-
+/**
+ * AIT-TR, Java Basic, Cohort42.1, HW #19
+ * @Author Rodion Shilinski
+ * @Version 28.02.2024
+ */
 public class Lesson19 {
     public static void main(String[] args) {
         RubberArray ra = new RubberArray();
