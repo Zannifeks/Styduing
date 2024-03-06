@@ -2,8 +2,9 @@ package lesson22.homework;
 
 public class Cat extends Animal {
 
-    public Cat(String name) {
-        super(name);
+
+    public Cat(String name, int age, int size) {
+        super(name, age, size);
     }
 
     public void purr () {

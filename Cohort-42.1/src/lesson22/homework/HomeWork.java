@@ -9,32 +9,26 @@ import lesson22.homework.test.Puma;
  */
 public class HomeWork {
     public static void main(String[] args) {
-        Tiger tiger = new Tiger("Big T");
+        Tiger tiger = new Tiger("Big T", 6, 120);
         System.out.println(tiger);
-        int tsize = tiger.size;
-        System.out.println(tsize + "cm");
         tiger.walk();
         tiger.roar();
         tiger.bite();
 
 
-        HomeCat hcat = new HomeCat("Barsik");
+        HomeCat hcat = new HomeCat("Barsik", 3, 40);
         System.out.println(hcat);
-        int hcsize = hcat.size;
-        System.out.println(hcsize + "cm");
         hcat.run();
         hcat.walk();
         hcat.purr();
 
-        Manul manul = new Manul("Stepan");
+        Manul manul = new Manul("Stepan", 2, 53);
         System.out.println(manul);
-        int msize = manul.size;
-        System.out.println(msize + "cm");
         manul.run();
         manul.scratch();
         manul.bite();
 
-        Puma puma = new Puma("Makar");
+        Puma puma = new Puma("Makar", 3, 130);
         System.out.println(puma);
         // We cant use protected methods from another package same as private or default
         // Decision: Use public

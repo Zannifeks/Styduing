@@ -4,8 +4,14 @@ public class Animal {
 
     private String name;
 
-    public Animal(String name) {
+    protected int age;
+
+    protected int size;
+
+    public Animal(String name, int age, int size) {
         this.name = name;
+        this.age = age;
+        this.size = size;
     }
 
     public void walk () {
@@ -17,9 +23,11 @@ public class Animal {
     }
 
     @Override
-    public String toString () {
-        return "Animal " +
-                "named as " + name + '\'' +
-                '.';
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", size=" + size +
+                '}';
     }
 }
