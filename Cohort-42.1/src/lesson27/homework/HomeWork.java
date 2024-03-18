@@ -34,7 +34,7 @@ public class HomeWork {
         bankAccount.transferMoney(300);
         System.out.println("Current balance of your bank account is: " + bankAccount.checkBalance());
 
-                //task 2
+        //task 2
         Triathlete triathlete = new Triathlete();
 
         triathlete.run();
