@@ -12,7 +12,7 @@ public class ElectronicWallet implements PaymentSystem{
     public void depositMoney(double amount) {
         balance += amount;
     }
-    
+
     @Override
     public void withdrawMoney(double amount) {
         balance -= amount;
