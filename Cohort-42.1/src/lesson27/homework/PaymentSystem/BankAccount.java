@@ -9,7 +9,7 @@ public class BankAccount implements PaymentSystem{
     }
 
     @Override
-    public void transferMoney(double amount) {
+    public void depositMoney(double amount) {
         balance += amount;
     }
 

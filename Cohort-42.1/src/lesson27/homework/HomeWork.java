@@ -17,7 +17,7 @@ public class HomeWork {
         System.out.println("Current balance of electronic wallet is: " + electronicWallet.checkBalance());
 
         System.out.println("You recived transfer 1000 on your electronic wallet");
-        electronicWallet.transferMoney(1000);
+        electronicWallet.depositMoney(1000);
         System.out.println("Withdrawing 400 from your electronic wallet");
         electronicWallet.withdrawMoney(400);
         System.out.println("Current balance of electronic wallet is: " + electronicWallet.checkBalance());
@@ -31,7 +31,7 @@ public class HomeWork {
         System.out.println("Current balance of your bank account is: " + bankAccount.checkBalance());
 
         System.out.println("You recived 300 on your balance");
-        bankAccount.transferMoney(300);
+        bankAccount.depositMoney(300);
         System.out.println("Current balance of your bank account is: " + bankAccount.checkBalance());
 
         //task 2

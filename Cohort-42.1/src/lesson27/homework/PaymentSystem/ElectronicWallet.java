@@ -9,10 +9,10 @@ public class ElectronicWallet implements PaymentSystem{
     }
 
     @Override
-    public void transferMoney(double amount) {
+    public void depositMoney(double amount) {
         balance += amount;
     }
-
+    
     @Override
     public void withdrawMoney(double amount) {
         balance -= amount;
