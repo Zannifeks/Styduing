@@ -1,81 +1,49 @@
 package lesson36;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class PersonSystem {
 
-    static Scanner scanner = new Scanner(System.in);
-
-    static Map<Integer, Person> idMap = new HashMap<>();
     public static void main(String[] args) {
-        List<Person> persons = new ArrayList<>();
+        Persons persons = new Persons();
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Simple personal system");
-        char operation = 0;
+        char operation;
         do {
-            System.out.println("Enter operation (a[dd],d[elete],u[pdate],p[rint],x - exit): ");
+            System.out.println("Enter operation (a[dd],d[elete],u[pdate],[f]ind,p[rint],x - exit): ");
             operation = scanner.next().charAt(0);
             switch (operation) {
                 case 'a':
-                    add(persons);
+                    System.out.println("Add: name & age: ");
+                    String name = scanner.next();
+                    int age = scanner.nextInt();
+                    persons.add(name,age);
                     break;
                 case 'd':
-                    delete(persons);
+                    System.out.print("Delete: id: ");
+                    int id = scanner.nextInt();
+                    persons.delete(id);
                     break;
                 case 'u':
-                    update(persons);
+                    System.out.println("Update: id & name & age");
+                    id = scanner.nextInt();
+                    name = scanner.next();
+                    age = scanner.nextInt();
+                    persons.update(id, name, age);
                     break;
                 case 'p':
-                    print(persons);
+                    System.out.println(persons);
+                    break;
+                case 'f':
+                    System.out.println("Find: id: ");
+                    id = scanner.nextInt();
+                    System.out.println(persons.find(id));
                     break;
                 case 'x':
+                    break;
                 default:
                     System.out.println("Undefined operation: " + operation);
             }
         } while (operation != 'x');
-    }
-
-    static void add(List<Person> persons) {
-        System.out.println("Add: name & age: ");
-        String name = scanner.next();
-        int age = scanner.nextInt();
-        Person person = new Person(name, age);
-        idMap.put(person.getId(), person);
-        persons.add(person);
-    }
-
-    static void delete(List<Person> persons) {
-        System.out.print("Delete: id: ");
-        int id = scanner.nextInt();
-        Person findPerson = idMap.get(id);
-        if ()
-    }
-
-
-
-
-
-    static void update(List<Person> persons) {
-        System.out.println("Update: id & name & age");
-        int id = scanner.nextInt();
-        String name = scanner.next();
-        int age = scanner.nextInt();
-        Person findPerson = findById(persons, id);
-        if (findPerson != null) {
-            findPerson.setName(name);
-            findPerson.setAge(age);
-        }
-    }
-
-    static Person findById(List<Person> persons, int id) {
-        for (Person person : persons) {
-            if (person.getId() == id) {
-                return person;
-            }
-        }
-        return null;
-    }
-
-    static void print(List<Person> persons) {
-        persons.forEach(System.out::println);
     }
 }
