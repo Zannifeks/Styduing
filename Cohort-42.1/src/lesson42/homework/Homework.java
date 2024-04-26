@@ -12,9 +12,9 @@ public class Homework {
         }
 
         List<Integer> evenNumbers = new ArrayList<>();
-        for (Integer number : numbers) {
-            if (number % 2 == 0) {
-                evenNumbers.add(number);
+        for (Integer even : numbers) {
+            if (even % 2 == 0) {
+                evenNumbers.add(even);
             }
         }
 
@@ -31,7 +31,7 @@ public class Homework {
         System.out.println(words);
 
         //task3
-        
+
 
 
     }
