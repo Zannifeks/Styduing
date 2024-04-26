@@ -1,5 +1,9 @@
 package lesson42.homework;
 
+import lesson42.LibraryBook;
+import lesson42.LibraryBookRepository;
+
+import java.security.cert.CertPath;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -44,8 +48,33 @@ public class Homework {
 
         System.out.println("Unconverted list: " + strList);
         System.out.println("Converted list: " + updWords);
-        
+
         //task3
+
+        LibraryBookRepository repository = new LibraryBookRepository();
+        repository.init();
+        Collection<LibraryBook> books = repository.values();
+        books.forEach(System.out::println);
+
+        List<String> autorList = books.stream()
+                .map(book -> book.getAuthor()) //+ ": " + book.getBookTitle())
+                .collect(Collectors.toList());
+
+
+
+        System.out.println("List of Authors: ");
+        autorList.forEach(System.out::println);
+
+        List<String> publisherList = books.stream()
+                .map(book -> book.getPublisher())
+                .distinct()
+                .collect(Collectors.toList());
+
+        System.out.println("List of Publishers: ");
+        publisherList.forEach(System.out::println);
+
+
+
 
 
 
