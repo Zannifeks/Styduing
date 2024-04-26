@@ -59,7 +59,7 @@ public class Homework {
         LibraryBookRepository repository = new LibraryBookRepository();
         repository.init();
         Collection<LibraryBook> books = repository.values();
-        books.forEach(System.out::println);
+        //books.forEach(System.out::println);
 
         List<String> autorList = books.stream()
                 .map(book -> book.getAuthor()) //+ ": " + book.getBookTitle())
@@ -77,6 +77,23 @@ public class Homework {
 
         System.out.println("List of Publishers: ");
         publisherList.forEach(System.out::println);
+
+        //on lesson
+
+        LibraryBookRepository repository1 = new LibraryBookRepository();
+        repository1.init();
+        Collection<LibraryBook> books1 = repository1.values();
+        Set<String> authors = books1.stream().map(b -> b.getAuthor()).collect(Collectors.toSet());
+        for (String author : authors) {
+            System.out.println(author);
+            System.out.println(books1.stream()
+                    .filter(b -> b.getAuthor().equals(author))
+                    .map(b -> b.getBookTitle())
+                    .collect(Collectors.toList()));
+        }
+        System.out.println(books1.stream()
+                .map(b -> b.getPublisher())
+                .collect(Collectors.toSet()));
 
 
 
