@@ -7,6 +7,11 @@ import java.security.cert.CertPath;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * AIT-TR, Java Basic, Cohort42.1, HW# 42
+ * @author Shilinski Rodion
+ * @version 26.04.2024
+ */
 public class Homework {
     public static void main(String[] args) {
 
